@@ -15,13 +15,13 @@ end
 local UserInputService = game:GetService("UserInputService")
 
 UserInputService.InputBegan:Connect(function(input, gameProcessedEvent)
-	if input.KeyCode == Enum.KeyCode.6 and not gameProcessedEvent then
+	if input.KeyCode == Enum.KeyCode.Six and not gameProcessedEvent then
 		enableSpeedHack()
 	end
 end)
 
 UserInputService.InputEnded:Connect(function(input, gameProcessedEvent)
-	if input.KeyCode == Enum.KeyCode.6 and not gameProcessedEvent then
+	if input.KeyCode == Enum.KeyCode.Six and not gameProcessedEvent then
 		disableSpeedHack()
 	end
 end)
